@@ -19,7 +19,6 @@ $("h1").on("click",function(){
 });
 
 function nextSequence(){
-    $("#level-title").text("Level "+level);
     userClickedPatter = [];
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColor = buttonColors[randomNumber];
@@ -27,7 +26,7 @@ function nextSequence(){
     $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColor);
     level++;
-   
+    $("#level-title").text("Level "+level);
 }
 
 $(".btn").on("click", function(){
