@@ -6,14 +6,14 @@ var started = false;
 $("body").keydown(function(){
     if(!started){
         nextSequence();
-        $("#level-title").text("Level 0");
+        $("#level-title").text("Level "+ level);
         started = true;
     }
 });
 $("h1").on("click",function(){
     if(!started){
         nextSequence();
-        $("#level-title").text("Level 0");
+        $("#level-title").text("Level "+ level);
         started = true;
     }
 });
