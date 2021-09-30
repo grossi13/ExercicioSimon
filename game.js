@@ -10,7 +10,7 @@ $("body").keydown(function(){
         started = true;
     }
 });
-$("h1").click(function(){
+$("h1").on("click",function(){
     if(!started){
         nextSequence();
         $("#level-title").text("Level 0");
