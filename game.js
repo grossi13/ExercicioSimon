@@ -1,7 +1,7 @@
 var gamePattern = [];
 var userClickedPatter = [];
 var buttonColors = ["red", "blue", "green", "yellow"];
-var level = 1;
+var level = 0;
 var started = false;
 $("body").keydown(function(){
     if(!started){
