@@ -6,7 +6,6 @@ var started = false;
 $("body").keydown(function(){
     if(!started){
         nextSequence();
-        $("#level-title").text("Level "+ level);
         started = true;
     }
 });
